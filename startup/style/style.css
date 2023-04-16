@@ -1,0 +1,229 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  color: white;
+}
+
+
+.title{
+	font-size: 36px;
+	padding-top: 0px;
+	text-align: left;
+}
+
+1
+
+.title{
+	font-size: 36px;
+	padding-top: 10px;
+	text-align: center;
+}
+.main-menu{
+	list-style: none;
+	position: absolute;
+	right: 100px;
+  margin: 0 auto;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 0px 0 0px;
+  padding: 15px 0 0px;
+  text-align: center;
+  background: #3399ff;
+}
+
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu';
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  display: inline-block;
+  transition: color .1s;
+}
+
+.menu-main a, .menu-main a:visited {color: #FFF;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  top: auto;
+  right: 50%;
+  bottom: 0px;
+  left: 50%;
+  background: #F0FFFF;
+  transition: .2s;
+}
+
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px;
+  margin: 0 30px;
+}
+}
+
+.main_title {
+  position: absolute;
+  left: 7%;
+  top: 1%;
+  transform: translate(-50%,-50%);
+  font-size: 27px;
+  color: white;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #1E90FF;
+    color: white;
+    padding: 19px;
+    font-size: 20px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  transform: translate(1550%,-100%);
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #4169E1;}
+
+.authorisation {
+  left: 96%;
+  top: 6%;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+}
+
+.authorisation {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.authorisation {
+    position: absolute;
+    display: inline-block;
+}
+
+.authorisation-content {
+    display: none;
+}
+
+.authorisation-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.authorisation-content a:hover {background-color: #ddd;}
+
+.authorisation:hover .authorisation-content {display: block;}
+
+.underline {
+  list-style: none;
+  position: absolute;
+  left: 2%;
+  top: 85%;
+  color: white;
+  a {
+    color: white;
+  }
+}
+
+.left_main {
+  font-size: 30px;
+  width: 700px; /*ширина */
+  height: 300px;
+  max-width:640px;/*максимальная ширина */
+  padding:10px 20px; /*внутренние отступы*/
+  background:#1E90FF; /*фоновый цвет*/
+  border-top:7px solid #2F73B6; /*верхняя рамка блока*/
+  border-bottom:7px solid #2F73B6;/*нижняя рамка блока*/
+  color: white; /*цвет шрифта*/
+  text-align:left; /*выравнивание текста по центру*/
+  line-height:1.2; /*высота строки текста*/
+  margin:20px left;  /*выравнивание блока и отступы сверху и снизу*/
+  transform: translate(5%, 55%);
+  position: absolute;
+  z-index: 1
+}
+
+.middle_main {
+  font-size: 55px;
+  width:970px; /*ширина */
+  height: 400px;
+  max-width:648px;/*максимальная ширина */
+  padding:10px 20px; /*внутренние отступы*/
+  background:#2F73B6; /*фоновый цвет*/
+  border-top:7px solid #1E90FF; /*верхняя рамка блока*/
+  border-bottom:7px solid #1E90FF;/*нижняя рамка блока*/
+  color: white; /*цвет шрифта*/
+  text-align:left; /*выравнивание текста по центру*/
+  line-height:1.2; /*высота строки текста*/
+  margin:20px left;  /*выравнивание блока и отступы сверху и снизу*/
+  transform: translate(83%, 25%);
+  position: absolute;
+  z-index: 2
+}
+
+.right_main {
+  font-size: 30px;
+  width: 700px; /*ширина */
+  height: 300px;
+  max-width:580px;/*максимальная ширина */
+  padding:10px 20px; /*внутренние отступы*/
+  background:#1E90FF; /*фоновый цвет*/
+  border-top:7px solid #2F73B6; /*верхняя рамка блока*/
+  border-bottom:7px solid #2F73B6;/*нижняя рамка блока*/
+  color: white; /*цвет шрифта*/
+  text-align:left; /*выравнивание текста по центру*/
+  line-height:1.2; /*высота строки текста*/
+  margin:20px left;  /*выравнивание блока и отступы сверху и снизу*/
+  transform: translate(202%, 55%);
+  position: absolute;
+  z-index: 1
+}

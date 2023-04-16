@@ -1,0 +1,2 @@
+Ubuntu:
+https://fonts.google.com/specimen/Ubuntu?subset=cyrillic&noto.script=Cyrl

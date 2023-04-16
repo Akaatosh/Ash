@@ -1,0 +1,161 @@
+.bph {
+  font-size: 40px;
+  width:100%; /*ширина */
+  max-width:700px;/*максимальная ширина */
+  padding:10px 20px; /*внутренние отступы*/
+  background:#ccc; /*фоновый цвет*/
+  border-top:5px solid #2F73B6; /*верхняя рамка блока*/
+  border-bottom:5px solid #2F73B6;/*нижняя рамка блока*/
+  color:#000; /*цвет шрифта*/
+  text-align:left; /*выравнивание текста по центру*/
+  line-height:1.2; /*высота строки текста*/
+  margin:20px left;  /*выравнивание блока и отступы сверху и снизу*/
+}
+
+.bpg {
+  font-size: 20px;
+  width:100%; /*ширина */
+  max-width:1850px;/*максимальная ширина */
+  padding:10px 20px; /*внутренние отступы*/
+  background:#FFF; /*фоновый цвет*/
+  border-top:5px solid #2F73B6; /*верхняя рамка блока*/
+  border-bottom:5px solid #2F73B6;/*нижняя рамка блока*/
+  color:#000; /*цвет шрифта*/
+  text-align:left; /*выравнивание текста по центру*/
+  line-height:1.2; /*высота строки текста*/
+  margin:20px left;  /*выравнивание блока и отступы сверху и снизу*/
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  color: black;
+}
+
+
+.title{
+	font-size: 36px;
+	padding-top: 0px;
+	text-align: left;
+}
+
+1
+
+.title{
+	font-size: 36px;
+	padding-top: 10px;
+	text-align: center;
+}
+.main-menu{
+	list-style: none;
+	position: absolute;
+	right: 100px;
+  margin: 0 auto;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 0px 0 0px;
+  padding: 15px 0 0px;
+  text-align: center;
+  background: #3399ff;
+}
+
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu';
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  display: inline-block;
+  transition: color .1s;
+}
+
+.menu-main a, .menu-main a:visited {color: #FFF;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  top: auto;
+  right: 50%;
+  bottom: 0px;
+  left: 50%;
+  background: #F0FFFF;
+  transition: .2s;
+}
+
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px;
+  margin: 0 30px;
+}
+}
+
+.main_title {
+  position: absolute;
+  left: 7%;
+  top: 1%;
+  transform: translate(-50%,-50%);
+  font-size: 27px;
+  color: white;
+}
+
+.authorisation {
+  left: 96%;
+  top: 6%;
+  transform: translate(-50%,-50%);
+  display: inline-block;
+}
+
+.authorisation {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.authorisation {
+    position: absolute;
+    display: inline-block;
+}
+
+.authorisation-content {
+    display: none;
+}
+
+.authorisation-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.authorisation-content a:hover {background-color: #ddd;}
+
+.authorisation:hover .authorisation-content {display: block;}
+
+.underline {
+  list-style: none;
+  position: absolute;
+  left: 2%;
+  top: 93%;
+  color: white;
+  a {
+    color: white;
+  }
+}
